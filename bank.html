@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-xs text-center font-bold "><span class="font-bold text-emerald-700">Baper-Bank</span>
+        </h1>
+        <main>
+            <section class="mt-1
+             ">
+                <div class="grid grid-cols-3   gap-1 w-9/12 mx-auto text-white ">
+                    <div class=" h-10 bg-green-400  rounded-xl">
+                        <h4 class="text-center  ">Deposit</h4>
+                        <h2 class="text-center deposi" id=''>$ <span id='deposit-total'>00</span></h2>
+                    </div>
+                    <div class="h-10 bg-pink-500  rounded-xl">
+                        <h4 class="text-sm text-center">Withdraw</h4>
+                        <h2 class="text-center deposi">$ <span id="withdraw-total">00</span></h2>
+                    </div>
+
+
+
+                    <div class="bg-violet-500  rounded-xl h-10 ">
+                        <h4 class="text-sm text-center">Balance</h4>
+                        <h2 class="text-center deposi">$<span id="balance-total">500</span> </h2>
+                    </div>
+                </div>
+
+            </section>
+            <!-- deposit and withdraw  -->
+            <section class="mt-1">
+                <section class="mt-1
+             ">
+                    <div class="grid grid-cols-2   gap-1 w-9/12 mx-auto text-white ">
+                        <div class="  bg-fuchsia-400  rounded-xl">
+                            <h4 class="text-center deposi ">Please Deposit</h4>
+                            <input class="center deposit text-center" type="text" name="" id="deposit-field" value=""
+                                placeholder="$Amount of deposit">
+                            <button id="btn-deposet " class="rounded-xl bg-amber-600 hover:bg-sky-700 depos">Deposit
+
+                            </button>
+                        </div>
+                        <div class="  bg-cyan-500  rounded-xl">
+                            <h4 class="text-center deposi ">Please Withdraw</h4>
+                            <input class="center deposit text-center" type="email" name="" id="withdraw-field" value=""
+                                placeholder="$Amount of WithDraw">
+                            <button id="btn-withdraw" class="rounded-xl bg-amber-600 hover:bg-sky-700 depos">WithDraw
+
+                            </button>
+                        </div>
+
+                    </div>
+
+                </section>
+            </section>
+        </main>
+    </header>
+    <script src="/js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+
+</html>
